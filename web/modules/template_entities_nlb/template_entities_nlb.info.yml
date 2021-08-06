@@ -1,0 +1,14 @@
+name: 'Template Entities Node Layout Builder'
+type: module
+description: 'Use template entities with the node layout builder.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Template Entities'
+dependencies:
+  - node_layout_builder:node_layout_builder
+  - template_entities:template_entities
+
+# Information added by Drupal.org packaging script on 2020-11-30
+version: '1.0.0-beta1'
+project: 'template_entities_nlb'
+datestamp: 1606751814

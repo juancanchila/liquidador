@@ -1,0 +1,10 @@
+name: Barcodes
+type: module
+description: Generate Barcodes
+core_version_requirement: ^8 || ^9
+package: "Content display"
+
+# Information added by Drupal.org packaging script on 2020-10-11
+version: '2.0.2'
+project: 'barcodes'
+datestamp: 1602451506

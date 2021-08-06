@@ -1,0 +1,4 @@
+all-nodes:
+  css:
+    theme:
+      css/print-style.css: { }
