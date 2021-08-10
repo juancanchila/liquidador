@@ -27,6 +27,7 @@ class Liquidador1_Form_eventos extends FormBase
 
     $form['barrio'] = array(
       '#type' => 'entity_autocomplete',
+      '#required' => TRUE,
       '#title' => t('Barrio'),
            '#description' => '<p>Seleccionar el barrio de Cartagena de Indias de  donde se realizará El Evento.</p><p> El formulario sólo  tendrá validez en los Barrios que generan coincidencia al escribir.</p>',
       '#target_type' => 'taxonomy_term',
@@ -386,7 +387,7 @@ Creando un nodo tipo factura con los datos recibidos
          $my_article->set('field_telefono_movil_contribuyen', $tmovil);
          $my_article->set('field_estrato_contribuyente', $estrato);
          $my_article->set('field_condicion_contribuyente', $condicion);
-         $my_article->set('status', '0');
+         $my_article->set('status', '1');
          $my_article->set('uid', $id_contribuyente);
          $my_article->set('body', '<table>
          <tbody>
@@ -462,11 +463,11 @@ Creando un nodo tipo factura con los datos recibidos
            <tr>
              <td><p>VALOR TARIFA SEGÚN RESOLUCIÓN N° 107 de 17 de febrero de 2021 para este monto de proyecto: </p></td>
              <td colspan="3">
-             <p>$ '.$valor_tarifa_evento.'</p>
+             <p>$ '.$valor_liquidacion.'</p>
              </td>
            </tr>
            <tr>
-             <td><p>VAOR EVENTO</p></td>
+             <td><p>VALOR EVENTO</p></td>
              <td>
              <p>'.$valor_evento.'</p>
              </td>

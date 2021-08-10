@@ -27,6 +27,7 @@ class Liquidador1_Form extends FormBase
 
     $form['barrio'] = array(
       '#type' => 'entity_autocomplete',
+      '#required' => TRUE,
       '#title' => t('Barrio'),
            '#description' => '<p>Seleccionar el barrio de Cartagena de Indias de  donde se realizará la Tala y/o Poda de Árboles.</p><p> El formulario sólo  tendrá validez en los Barrios que generan coincidencia al escribir.</p>',
       '#target_type' => 'taxonomy_term',
@@ -133,8 +134,7 @@ class Liquidador1_Form extends FormBase
     $form['estrato'] = array(
       '#title' => t('Estrato'),
       '#type' => 'select',
-      '#required' => TRUE,
-      '#description' => 'Seleccionar el estrato de quien realiza la liquidación.',
+          '#description' => 'Seleccionar el estrato de quien realiza la liquidación.',
       '#options' => array(t('--- Seleccionar ---'), t('1'), t('2'), t('3'), t('4') , t('5') , t('6')    ),
     );
 
@@ -253,7 +253,12 @@ Poseedor: Manifestación escrita y firmada de tal calidad.</li>
    */
   public function validateForm(array &$form, FormStateInterface $form_state)
   {
+    $cantidad_arboles = $form_state->getValue('cantidad_arboles');;
+    $cantidad_arboles_limit=26;
 
+   if ($cantidad_arboles >= $cantidad_arboles_limit){
+    $form_state->setErrorByName('cantidad_arboles', $this->t('Por disposiciones legales si la solicitud supera 25 árboles, este trámite debe realizarse a través del sistema VITAL del MinAmbiente en : http://vital.minambiente.gov.co'));
+}
 
 
   }
@@ -353,7 +358,7 @@ Creando un nodo tipo factura con los datos recibidos
          $my_article->set('field_telefono_movil_contribuyen', $tmovil);
          $my_article->set('field_estrato_contribuyente', $estrato);
          $my_article->set('field_condicion_contribuyente', $condicion);
-         $my_article->set('status', '0');
+         $my_article->set('status', '1');
          $my_article->set('uid', $id_contribuyente);
          $my_article->set('body', '<table>
          <tbody>
@@ -501,7 +506,7 @@ Creando un nodo tipo factura con los datos recibidos
 
 
 
-    $this->messenger()->addStatus($this->t('You specified a title of @title.', ['@title' =>$nid]));
+    /**$this->messenger()->addStatus($this->t('You specified a title of @title.', ['@title' =>$nid]));*/
   }
 
 }

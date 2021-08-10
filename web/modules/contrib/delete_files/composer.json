@@ -1,0 +1,18 @@
+{
+  "name": "drupal/delete_files",
+  "description": "Delete files easily.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/delete_files",
+  "authors": [
+    {
+        "name": "Mike Kreuzer (mike_kreuzer)",
+        "homepage": "https://www.drupal.org/u/mike_kreuzer",
+        "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/delete_files",
+    "source": "http://cgit.drupalcode.org/delete_files"
+  },
+  "license": "GPL-2.0+"
+}

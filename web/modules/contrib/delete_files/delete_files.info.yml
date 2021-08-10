@@ -1,0 +1,10 @@
+name: "Delete Files"
+type: module
+description: "Delete files easily"
+core_version_requirement: ^8.8 || ^9
+package: "Content"
+
+# Information added by Drupal.org packaging script on 2020-05-26
+version: '8.x-1.5'
+project: 'delete_files'
+datestamp: 1590498205

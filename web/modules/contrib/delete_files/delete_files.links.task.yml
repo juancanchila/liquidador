@@ -1,0 +1,5 @@
+delete_files.delete_files_form:
+  title: Delete files
+  route_name: delete_files.delete_files_form
+  base_route: system.admin_content
+  weight: 1

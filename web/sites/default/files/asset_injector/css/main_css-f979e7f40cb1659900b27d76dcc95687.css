@@ -1,0 +1,13 @@
+.layout-main {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 5px 29px black;
+    border: 1 solid red;
+    padding: 2%;
+    margin: auto;
+    max-width: 50%;
+}
+
+.icono-pse a {
+    background-image: url(http://epacartagena.gov.co/web/wp-content/uploads/2020/12/icono-logo-pse-1.svg);
+}

@@ -35,3 +35,21 @@ p {
 .concepto{
  background: rgb(85, 85, 85);
 }
+.print__wrapper.print__wrapper--pdf {
+  display: none;
+}
+.page-title {
+  /* font-size: 2em; */
+  display: none !important;
+  /* line-height: 1em; */
+}
+
+h1.title.page-title {
+  display: none !important;
+}
+
+.block.block-barcodes.block-barcode {
+  border: solid;
+    padding: 5%;
+    text-align: center;
+}

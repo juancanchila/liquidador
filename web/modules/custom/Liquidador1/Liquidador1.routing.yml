@@ -9,14 +9,14 @@ custom_form.form2:
   path: '/Eventos'
   defaults:
     _form: '\Drupal\Liquidador1\Form\Liquidador1_Form_eventos'
-    _title: 'Viavilidad Eventos'
+    _title: 'Viabilidad Eventos'
   requirements:
     _permission: 'access content'
 custom_form.form3:
   path: '/publicidad_fija'
   defaults:
     _form: '\Drupal\Liquidador1\Form\Liquidador1_Form_publicidad'
-    _title: 'Viavilidad Publicidad Fija'
+    _title: 'Viabilidad Publicidad Fija'
   requirements:
     _permission: 'access content'
 
@@ -24,7 +24,7 @@ custom_form.form4:
   path: '/publicidad_movil'
   defaults:
     _form: '\Drupal\Liquidador1\Form\Liquidador1_Form_publicidad_movil'
-    _title: 'Viavilidad Publicidad Móvil'
+    _title: 'Viabilidad Publicidad Móvil'
   requirements:
     _permission: 'access content'
 

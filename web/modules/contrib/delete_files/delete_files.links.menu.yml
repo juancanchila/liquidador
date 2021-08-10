@@ -1,0 +1,12 @@
+delete_files.config_form:
+  title: Delete files
+  parent: system.admin_config_media
+  description: 'Configure the Delete Files module'
+  route_name: delete_files.admin_page
+  weight: 1
+
+delete_files.delete_files_form:
+  title: Delete files
+  route_name: delete_files.delete_files_form
+  parent: system.admin_content
+  weight: 1
