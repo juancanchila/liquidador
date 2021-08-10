@@ -318,7 +318,7 @@ Creando un nodo tipo factura con los datos recibidos
          $my_article->set('field_telefono_movil_contribuyen', $tmovil);
          $my_article->set('field_estrato_contribuyente', $estrato);
          $my_article->set('field_condicion_contribuyente', $condicion);
-         $my_article->set('status', '0');
+         $my_article->set('status', '1');
          $my_article->set('uid', $id_contribuyente);
          $my_article->set('body', '<table>
          <tbody>
